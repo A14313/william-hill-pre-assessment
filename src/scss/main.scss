@@ -1,0 +1,167 @@
+@import 'breakpoints';
+@import 'colors';
+@import 'fonts';
+@import 'resets';
+@import 'utils';
+
+body {
+	font-family: var(--ff-default);
+	font-weight: 400;
+	background-color: var(--clr-body-bgcolor);
+	color: var(--clr-text-paragraph-default-400);
+}
+
+.hero {
+	// border: 1px solid red;
+	min-height: 50vh;
+	display: grid;
+	place-items: center;
+	background-image: url('../assets/img/casino-main-img.jpg');
+	background-position: 30% center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	isolation: isolate;
+
+	@include mediaQuery(sm1) {
+		background-position: 53%;
+	}
+
+	@include mediaQuery(med) {
+		min-height: 60vh;
+	}
+
+	@include mediaQuery(lrg) {
+		background-position: 40%;
+		min-height: 70vh;
+	}
+
+	&::after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background: rgb(0, 0, 0);
+		background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 41%, rgba(252, 252, 252, 0) 100%);
+		background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 41%, rgba(252, 252, 252, 0) 100%);
+		background: linear-gradient(90deg, rgba(0, 0, 0, 1) 41%, rgba(252, 252, 252, 0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#fcfcfc",GradientType=1);
+	}
+
+	&__contents-container {
+		display: grid;
+		gap: 1em;
+
+		@include mediaQuery(lrg) {
+			gap: 1.3em;
+		}
+	}
+
+	&__text {
+		font-size: var(--fs-410);
+		color: var(--clr-text-paragraph-white-400);
+		line-height: 1.2;
+
+		@include mediaQuery(sm2) {
+			font-size: var(--fs-420);
+		}
+
+		p:nth-of-type(2) {
+			color: var(--clr-text-paragraph-white-300);
+			@include mediaQuery(lrg) {
+				font-size: var(--fs-430);
+			}
+		}
+
+		p:nth-of-type(4) {
+			color: var(--clr-text-paragraph-white-350);
+			font-weight: 500;
+
+			@include mediaQuery(lrg) {
+				font-size: var(--fs-520);
+			}
+		}
+
+		.colored {
+			color: var(--clr-accent);
+			font-size: var(--fs-520);
+
+			@include mediaQuery(sm2) {
+				font-size: var(--fs-550);
+			}
+
+			@include mediaQuery(lrg) {
+				font-size: var(--fs-700);
+			}
+
+			@include mediaQuery(xlrg) {
+				font-size: var(--fs-800);
+			}
+
+			&.strong {
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.hero__footer {
+	position: absolute;
+	inset: auto auto 0 auto;
+	border-bottom: 1px solid hsl(0, 0%, 80%);
+	padding-block: 0.7em;
+	background-color: var(--clr-clear-bg);
+	width: 100%;
+
+	&__contents-container {
+		display: flex;
+		gap: 0.6em;
+		flex-direction: column;
+		align-items: center;
+		width: 80%;
+		margin-inline: auto;
+
+		p {
+			@include mediaQuery(sm1) {
+				font-size: var(--fs-410);
+			}
+		}
+
+		img {
+			max-width: 250px;
+			width: 100%;
+
+			@include mediaQuery(sm1) {
+				max-width: 300px;
+			}
+		}
+	}
+}
+
+.intro {
+	--gap: 1em;
+	margin-block: 1em;
+	display: grid;
+	gap: var(--gap);
+
+	&__contents-container {
+		display: grid;
+		gap: var(--gap);
+	}
+
+	&__footer {
+		text-align: center;
+
+		@include mediaQuery(med) {
+			text-align: end;
+		}
+
+		p {
+			font-size: var(--fs-300);
+			font-weight: 500;
+		}
+	}
+}

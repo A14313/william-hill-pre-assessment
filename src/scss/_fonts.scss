@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap');
+
+:root {
+	--ff-default: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--ff-title: 'Raleway', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--fs-100: 0.625rem; //10px
+	--fs-200: 0.75rem; //12px
+	--fs-300: 0.875rem; //14px
+
+	--fs-400: 1rem; //16px
+	--fs-410: 1.125rem; //18px
+	--fs-420: 1.25rem; //20px
+	--fs-430: 1.375rem; //22px
+
+	--fs-500: 1.625rem; //26px
+	--fs-510: 1.75rem; //28px
+	--fs-520: 1.875rem; //30px
+	--fs-550: 2.188rem; //35px
+	--fs-600: 2.5rem; // 40px
+	--fs-700: 3.125rem; //50px
+	--fs-800: 3.75rem; //60px
+	--fs-900: 5rem; // 80px
+}

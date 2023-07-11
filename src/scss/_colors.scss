@@ -1,0 +1,21 @@
+:root {
+	--clr-body-bgcolor: hsl(156, 24%, 96%);
+	// --clr-primary: hsl(240, 4%, 12%);
+	--clr-primary: hsl(0, 0%, 0%);
+	--clr-accent: hsl(90, 100%, 49%);
+
+	--clr-clear-bg: hsl(0, 0%, 100%);
+	// --clr-footer: hsl(0, 0%, 6%);
+	--clr-footer: hsl(0, 0%, 13%);
+
+	// Texts
+	--clr-text-title: var(--clr-primary);
+	--clr-text-paragraph-default-300: hsl(240, 2%, 50%);
+	--clr-text-paragraph-default-400: hsl(240, 2%, 44%);
+
+	--clr-text-paragraph-white-100: hsl(0, 0%, 30%);
+	--clr-text-paragraph-white-200: hsl(0, 0%, 70%);
+	--clr-text-paragraph-white-300: hsl(0, 0%, 80%);
+	--clr-text-paragraph-white-350: hsl(0, 0%, 90%);
+	--clr-text-paragraph-white-400: hsl(0, 0%, 100%);
+}
