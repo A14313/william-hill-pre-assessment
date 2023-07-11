@@ -1,4 +1,4 @@
-const url = 'http://feedsapi.safe-installation.com/api/GetJackpotTotalAmount?CurrencyCode=USD&currencySymbol=$&BrandID=0';
+const url = 'https://feedsapi.safe-installation.com/api/GetJackpotTotalAmount?CurrencyCode=USD&currencySymbol=$&BrandID=0';
 const jackpot = document.querySelector('#jackpot');
 
 function randomCent() {

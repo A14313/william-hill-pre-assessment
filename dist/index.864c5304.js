@@ -1,2 +1,0 @@
-const t=document.querySelector("#jackpot");fetch("http://feedsapi.safe-installation.com/api/GetJackpotTotalAmount?CurrencyCode=USD&currencySymbol=$&BrandID=0").then(t=>t.json()).then(e=>{let n=e.entity.totalAmount.toString(),o=n.substring(n.indexOf(".")+1),a=n.slice(0,n.indexOf("."));t.innerHTML=`$ ${a}.${o}`,setInterval(()=>{o=(parseInt(o)+(Math.floor(10*Math.random())+1))%100,t.innerHTML=`$ ${a}.${o}`},1e3)});
-//# sourceMappingURL=index.864c5304.js.map
