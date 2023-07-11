@@ -1,6 +1,6 @@
 {
 	"name": "william-hill-pre-assessment",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "This is my solution to the pre assessment of William Hill",
 	"scripts": {
 		"start": "rm -rf dist/* && parcel src/*.html --open",
